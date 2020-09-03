@@ -1,0 +1,17 @@
+.order-section {
+  background: lightgray; //url("./img/decor/background.png") center;
+
+  &:before {
+  content: url("../img/decor/backberries.png");
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  }
+
+  &:after {
+  content: url("../img/decor/one-berry.png");
+  position: absolute;
+  left: 10%;
+  bottom: 2%;
+  }
+}
