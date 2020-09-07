@@ -2,7 +2,7 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 40px;
+  margin-right: rem(40px);
 
   &--checkbox {      
 
@@ -20,27 +20,37 @@
   margin: 0;
 }
 
-.radio__elem {
-  display: none;
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: rem(1px);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: rem(1px);
+}
 
+.radio__elem {
+  
   &:checked~.radio__visible {
     &:before {
       display: block;
     }
   }
+  
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background: #fff;
 
   &:before {
     content: "";
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     background: #365a49;
     border-radius: 50%;
     position: absolute;
@@ -52,6 +62,6 @@
 }
 
 .radio__title {
-  margin-left: 15px;
+  margin-left: rem(15px);
 }
 

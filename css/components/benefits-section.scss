@@ -2,10 +2,37 @@
   position: relative;
   background: url("../img/icons/grey_leaf.png") left top 57% no-repeat;
 
+  @include tablets {
+    background-position: left top;
+  }
+
+  @include phones {
+    background: none;
+  }
+
   &:before {
+    position: absolute;
+    right: 10%;
+    top: -50%;
+    content: url("../img/icons/with_choc.svg");
+
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+      display: none;   
+    }
+  }
+
+  &:after {
     content: url("../img/icons/raspberry-and-bars.png");
     position: absolute;
-    bottom: -90px;
-    left: 0; 
+    bottom: rem(-90px);
+    left: 0;
+
+    @include phones {
+      display: none;
+    }
   }
 }

@@ -1,6 +1,7 @@
 .order-section {
-  background: lightgray; //url("./img/decor/background.png") center;
-
+  background: url("../img/icons/order_sec.svg") no-repeat ;
+  background-size: 100%;
+  
   &:before {
   content: url("../img/decor/backberries.png");
   position: absolute;
@@ -9,7 +10,7 @@
   }
 
   &:after {
-  content: url("../img/decor/one-berry.png");
+  content: url("../img/icons/one-berry.svg");
   position: absolute;
   left: 10%;
   bottom: 2%;
