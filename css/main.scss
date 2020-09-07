@@ -1,10 +1,15 @@
-$containerWidth: 940px;
+$containerWidth: 1100px;
 $baseFontSize: 18px;
+
+$tablets: 768px;
+$phones: 480px;
 
 $darkGreen: #0b4d3c;
 $blue: #61c4d9;
 
 $z-fixed-menu: 100;
+
+@import "media";
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 
@@ -28,4 +33,5 @@ $z-fixed-menu: 100;
 @import "components/order-section";
 @import "components/form";
 @import "components/radio";
-@import "components/fixed-menu"
+@import "components/fixed-menu";
+@import "components/hamburger";
